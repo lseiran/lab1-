@@ -2,15 +2,21 @@
   float: left;
   
   }
-.i>img{
-  border-top-left-radius: 64px 64px;
-}
+
 .t{
+  flex-grow: 1;
   float: left;
   border: 2px solid black;
   box-shadow: 5px 5px 5px gray;
-  
 }
+.ct1{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15 px;
+}
+
+
 #l1 {
   color: orange
       }
@@ -52,19 +58,18 @@ footer{
 }
 
 .container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-gap: 15px;
-  padding: 5px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
 }
 .container > div {
+  width: 23%;
   background-color: #f1f1f1;
   border: 1px solid black;
   padding: 10px;
-  font-size: 30px;
   text-align: center;
-  border-spacing: 5px;
+  border-spacing: 15px;
+  margin:5px;
   box-shadow: 5px 5px 5px gray;
   transition: transform 1.5s linear;
 }
@@ -77,13 +82,138 @@ footer{
 
 .g1{
   display: inline;
-  font-size: 30pt;
   border-right: 2px solid white; 
 }
 
 .g2{
-  font-size: 30pt;
   display: inline;
   padding: 20px;
   border-left: 2px solid white; 
 }
+
+.estrecho{
+  display:none;
+}
+
+.ancho{
+  display:none;
+}
+
+@media ( max-width: 319px) {/*Ventanas muy reducidas*/
+  img   {
+    max-width: 25%;
+    height: auto;
+  }
+
+  body {
+    font-size: 10rem;
+  }
+
+  .estrecho{
+  display: block;  
+  }
+
+}
+
+@media (min-width:320px ) and ( max-width: 480px) {/*Dispositivos móviles*/
+  img   {
+    max-width: 40%;
+    height: auto;
+  }
+
+  body {
+    font-size: 0.8rem;
+  }
+
+  .estrecho{
+    display: block;
+    }
+}
+
+@media (min-width:481px ) and ( max-width: 768px) {/*Ipads, tablets*/
+  img   {
+    max-width: 50%;
+    height: auto;
+  }
+  body {
+    font-size: 1rem;
+  }
+
+  .estrecho{
+    display: block;  
+    }
+
+}
+
+@media (min-width:769px ) and ( max-width: 1024px) {/*Pantallas pequeñas*/
+  img   {
+    max-width: 75%;
+    height: auto;
+  }
+  body {
+    font-size: 1.3rem;
+  }
+
+.i picture img{
+  border-top-left-radius: 64px 64px;
+}
+
+.u picture img{
+  max-width: 180px;
+  height: auto;
+}
+
+  .ancho {
+  display: block;  
+      }
+
+}
+
+@media (min-width:1025px ) and ( max-width: 1200px) {/*Pantallas grandes*/
+  img   {
+    max-width: 100%;
+    height: auto;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+
+  .i picture img{
+    border-top-left-radius: 64px 64px;
+  }
+
+  .u picture img{
+    max-width: 180px;
+    height: auto;
+  }
+
+  .ancho{
+      display: block;
+      }
+
+}
+
+@media (min-width:1201px ) {/*Pantallas enormes*/
+  img   {
+    max-width: 100%;
+    height: auto;
+  }
+  body {
+    font-size: 1.8rem;
+  }
+
+  .i picture img{
+    border-top-left-radius: 64px 64px;
+  }
+
+  .u picture img{
+    max-width: 180px;
+    height: auto;
+  }
+
+  .ancho{
+      display: block;
+    }
+
+}
+

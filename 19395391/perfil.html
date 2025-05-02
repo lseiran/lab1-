@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+  <div class="ct1">
     <div class="i">
-    <img src="./19395391.jpg">
+      <picture>
+        <source srcset="./CEDULA-SMALL.jpg" media="(max-width: 768px)" class="estrecho"/>
+        <source srcset="./CEDULA-BIG.jpg" media="(min-width: 769px)" class="ancho"/>
+        <img src="./CEDULA-SMALL-bw.jpg" class="porDefecto">
+      </picture>
   </div>
   <div class="t">
     <big><a style="color:green";>Rama Villalobos</a><br></big>
@@ -20,6 +25,7 @@
     <br>Videojuegos favoritos: StarCraft, La-Mulana, Maldita Castilla
     <br><b style=font-style:bold>Lenguajes aprendidos: C++, C#, Java, Ensamblador x86</b>
     <br>Si necesitan comunicarse conmigo me pueden escribir a: <a id="l1" href="mailto:lokosselgrisis@gmail.com">lokosselgrisis@gmail.com</a></c>
+    </div>
     </div>
 </body>
 </html>
